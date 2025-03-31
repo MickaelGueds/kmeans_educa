@@ -1,0 +1,6 @@
+cluster,quantidade_municipios,nome_cluster,perfil,IDHM,IDEB Anos Iniciais,IDEB Anos Finais,Taxa de Evasão AI,Taxa de Evasão AF,Taxa de Abandono AI,Taxa de Abandono AF
+0,41,Alto IDEB Anos Iniciais,"Municípios com IDEB Anos Iniciais acima da média estadual, proporcionando uma base educacional sólida para crianças no início da escolarização.",0.54,4.88,4.31,1.34%,5.18%,0.22%,1.66%
+1,29,Baixa Evasão Escolar,"Municípios com taxas de evasão escolar reduzidas, demonstrando boa capacidade de retenção de alunos no sistema educacional.",0.57,4.86,4.24,0.54%,1.60%,0.29%,1.51%
+2,26,Alta Taxa de Abandono,"Municípios com altas taxas de abandono escolar, indicando desafios significativos na permanência dos alunos no ambiente escolar.",0.56,4.60,3.85,3.00%,5.22%,1.70%,4.42%
+3,56,IDEB Anos Finais Elevado,"Municípios com IDEB Anos Finais destacado, conseguindo manter a qualidade educacional na transição para o ensino fundamental II.",0.60,5.43,4.80,2.09%,3.62%,0.19%,1.03%
+4,72,IDHM Abaixo da Média,"Municípios com IDHM educacional abaixo da média, enfrentando desafios socioeconômicos que impactam o ambiente educacional.",0.57,6.23,5.21,0.78%,3.02%,0.04%,0.11%

@@ -1,27 +1,49 @@
-Município,IDHM 2010,IDEB AI - Pública,IDEB Anos Finais - Pública,Taxa de evasão ensino fund. Anos Iniciais,Taxa de evasão ensino fund. Anos Finais,Taxa de Abandono - Anos Iniciais,Taxa de Abandono - Anos Finais
-Alvorada do Gurguéia,0.578,4.8,3.2,1.9,2.4,0.8,4.0
-Barreiras do Piauí,0.557,4.1,2.6,3.4,6.3,2.0,9.5
-Barro Duro,0.612,5.4,3.5,2.9,4.5,0.5,4.9
-Campo Alegre do Fidalgo,0.537,4.4,3.4,1.6,7.1,2.0,0.9
-Canto do Buriti,0.576,4.4,4.5,2.0,3.8,1.2,1.4
-Caracol,0.552,3.5,3.6,1.4,14.2,4.3,7.7
-Caxingó,0.488,3.8,3.8,1.8,4.1,1.1,3.9
-Corrente,0.642,4.5,3.7,9.8,5.5,0.9,2.5
-Cristino Castro,0.566,4.2,3.3,2.2,3.7,1.7,3.8
-Fartura do Piauí,0.548,4.8,4.0,3.4,4.5,2.2,8.0
-Flores do Piauí,0.547,4.8,4.4,6.3,4.7,0.6,2.8
-Gilbués,0.548,3.7,3.7,2.5,5.4,6.1,12.1
-Itaueira,0.583,5.1,4.0,1.8,3.8,2.7,7.5
-Jerumenha,0.591,4.5,4.660454545454545,1.7,2.9,1.1,2.7
-Luzilândia,0.545,4.5,3.9,1.7,4.1,2.0,5.2
-Murici dos Portelas,0.53,5.1,3.3,0.6,2.7,1.0,9.3
-Nossa Senhora dos Remédios,0.533,5.1,4.5,5.2,9.8,2.1,1.9
-Novo Oriente do Piauí,0.562,5.415765765765766,4.0,2.7,4.1,0.6,2.3
-Parnaguá,0.575,6.2,4.5,6.9,11.6,1.0,2.8
-Passagem Franca do Piauí,0.561,4.6,3.9,5.1,7.8,0.7,2.8
-Pavussu,0.526,4.2,4.0,3.8,2.4,0.7,3.1
-Redenção do Gurguéia,0.589,4.8,3.7,2.5,2.6,1.2,3.4
-Riacho Frio,0.541,4.6,3.9,1.6,3.1,1.0,2.0
-Santa Luz,0.588,4.9,4.5,1.6,4.0,4.6,1.3
-Sebastião Barros,0.536,3.8,3.8,2.9,5.7,1.4,2.5
-Várzea Branca,0.553,4.5,3.7,0.7,5.0,0.8,6.5
+Município,IDEB AI - Pública,IDEB Anos Finais - Pública,Taxa de evasão ensino fund. Anos Iniciais,Taxa de evasão ensino fund. Anos Finais,Taxa de Abandono - Anos Iniciais,Taxa de Abandono - Anos Finais
+Acauã,6.2,5.6,0.5,3.9,0.0,0.0
+Água Branca,6.8,5.6,0.5,1.9,0.0,0.0
+Alto Longá,5.6,5.0,0.4,2.3,0.2,0.0
+Altos,7.0,5.6,1.4,2.5,0.1,0.3
+Angical do Piauí,6.8,5.2,1.2,1.1,0.0,0.0
+Antônio Almeida,6.1,5.6,0.0,2.1,0.0,0.0
+Barra D'Alcântara,6.1,4.3,0.0,1.9,0.0,0.0
+Bela Vista do Piauí,6.8,5.5,0.4,3.1,0.0,0.0
+Belém do Piauí,6.8,5.1,0.0,1.4,0.0,0.0
+Buriti dos Montes,7.3,6.5,0.2,3.1,0.0,0.0
+Caldeirão Grande do Piauí,7.2,5.9,0.3,2.2,0.0,0.0
+Campo Grande do Piauí,7.0,5.0,0.5,1.5,0.0,0.0
+Castelo do Piauí,6.7,5.3,1.1,2.7,0.0,0.0
+Cocal de Telha,5.3,5.3,1.3,1.1,0.0,0.0
+Cocal dos Alves,7.8,6.4,0.4,3.1,0.2,0.3
+Demerval Lobão,7.4,5.6,1.2,2.6,0.0,0.0
+Dom Expedito Lopes,6.2,5.3,0.5,0.9,0.0,0.0
+Dom Inocêncio,5.5,4.9,0.6,3.1,0.0,0.0
+Domingos Mourão,8.4,6.1,1.0,2.8,0.0,0.0
+Elesbão Veloso,5.8,5.2,0.7,2.0,0.0,0.4
+Eliseu Martins,5.3,4.9,0.3,2.6,0.0,0.4
+Floresta do Piauí,5.9,5.5,0.7,2.0,0.0,0.0
+Francinópolis,6.5,4.7,0.3,4.1,0.0,0.0
+Fronteiras,7.0,4.7,1.8,1.5,0.0,0.8
+Ipiranga do Piauí,6.5,5.3,1.1,1.1,0.0,0.0
+Isaías Coelho,5.6,4.7,0.3,1.6,0.1,0.0
+Jacobina do Piauí,6.1,5.0,0.2,5.1,0.0,0.0
+Juazeiro do Piauí,6.0,4.6,0.2,3.3,0.0,0.0
+Monsenhor Hipólito,6.4,4.9,0.5,3.0,0.0,0.2
+Oeiras,7.1,5.9,0.8,3.0,0.0,0.0
+Olho D'Água do Piauí,6.4,4.6,0.0,2.6,0.0,0.6
+Padre Marcos,6.6,4.7,1.4,1.5,0.0,0.0
+Pajeú do Piauí,6.4,5.6,0.0,1.7,0.0,0.0
+Palmeira do Piauí,6.3,5.1,1.1,3.0,0.0,0.0
+Piracuruca,7.4,5.6,1.0,3.1,0.0,0.0
+Piripiri,5.8,5.1,0.7,2.5,0.0,0.2
+Santa Rosa do Piauí,6.6,4.660454545454545,0.3,1.2,0.0,0.3
+São Félix do Piauí,6.0,5.5,0.0,1.0,0.6,0.0
+São João da Canabrava,6.9,5.8,0.7,3.5,0.3,0.0
+São João do Arraial,5.9,5.3,0.2,2.8,0.0,0.7
+São José do Divino,6.6,5.3,0.2,4.6,0.0,0.0
+São Luis do Piauí,6.6,5.1,0.7,5.4,0.0,0.0
+São Miguel da Baixa Grande,6.3,5.6,0.0,3.2,0.0,0.7
+Simões,7.3,5.8,1.1,6.4,0.0,0.0
+Simplício Mendes,6.7,4.9,0.8,3.2,0.0,0.0
+Tanque do Piauí,6.6,5.8,0.5,0.5,0.0,0.0
+Vila Nova do Piauí,7.1,6.0,0.6,0.8,0.0,0.0
+Wall Ferraz,5.6,4.9,0.7,2.3,0.0,0.5

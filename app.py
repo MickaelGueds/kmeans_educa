@@ -12,18 +12,26 @@ df_clusters = pd.read_csv("diagnostico_clusters_educacao.csv")
 # Dados detalhados de cada município e cluster
 df_municipios = pd.read_csv("municipios_clusters.csv")
 
-# Criar nomes descritivos para os clusters (exemplo - você deve ajustar conforme os resultados reais)
-# Estes nomes devem ser personalizados com base nas características identificadas
+# Criar nomes descritivos para os clusters com base nos dados reais
+# Usar os nomes completos definidos nos arquivos de diagnóstico
 cluster_nomes = {}
 
-# Preencher dinamicamente os nomes dos clusters com base nos perfis
+# Preencher os nomes dos clusters com seus nomes completos do arquivo de diagnóstico
 for index, row in df_clusters.iterrows():
     cluster_id = str(row["cluster"])
-    # Extrair o perfil principal (primeiras palavras do texto do perfil)
-    perfil_text = row["Perfil"]
-    # Usar as primeiras palavras como nome curto
-    nome_curto = " ".join(perfil_text.split()[:4]) + "..." if len(perfil_text.split()) > 4 else perfil_text
-    cluster_nomes[cluster_id] = nome_curto
+    # Usar o nome completo definido no arquivo de diagnóstico
+    if "Nome do Cluster" in df_clusters.columns:
+        cluster_nomes[cluster_id] = row["Nome do Cluster"]
+    else:
+        # Fallback para os nomes definidos diretamente se a coluna não existir
+        nomes_predefinidos = {
+            "0": "IDEB Bom e Evasão Moderada",
+            "1": "Alta Taxa de Abandono",
+            "2": "IDEB Excelente e Baixo Abandono",
+            "3": "Baixa Evasão e Abandono Moderado",
+            "4": "IDEB Médio e Evasão Alta"
+        }
+        cluster_nomes[cluster_id] = nomes_predefinidos.get(cluster_id, f"Cluster {int(cluster_id)+1}")
 
 # Adicionar coluna com nomes descritivos
 df_clusters["Nome do Cluster"] = df_clusters["cluster"].astype(str).map(cluster_nomes)
@@ -43,7 +51,6 @@ st.write("Este dashboard apresenta uma análise dos indicadores educacionais dos
 # -----------------------------------
 st.header("📌 Indicadores Utilizados")
 st.markdown("""
-- **IDHM**: Índice de Desenvolvimento Humano Municipal (2010).
 - **IDEB AI - Pública**: Índice de Desenvolvimento da Educação Básica para Anos Iniciais.
 - **IDEB Anos Finais - Pública**: Índice de Desenvolvimento da Educação Básica para Anos Finais.
 - **Taxa de evasão ensino fund. Anos Iniciais**: Percentual de alunos que deixam a escola nos anos iniciais.
@@ -63,18 +70,14 @@ for cluster_id, nome in cluster_nomes.items():
     idx = df_clusters[df_clusters["cluster"].astype(str) == cluster_id].index[0]
     cluster_data = df_clusters.iloc[idx]
     
-    # Extrair alguns pontos fortes e fracos para a descrição
-    pontos_fortes = cluster_data["Pontos Fortes"].split("\n")
-    pontos_fracos = cluster_data["Pontos Fracos"].split("\n")
-    
-    # Criar descrição resumida
-    forte = pontos_fortes[0].replace("- ", "") if pontos_fortes and pontos_fortes[0] != "- Nenhum indicador destaca-se positivamente" else "Sem destaques positivos específicos"
-    fraco = pontos_fracos[0].replace("- ", "") if pontos_fracos and pontos_fracos[0] != "- Nenhum indicador destaca-se negativamente" else "Sem desafios específicos"
+    # Extrair principais características dos clusters
+    perfil = cluster_data["Perfil"] if "Perfil" in df_clusters.columns else ""
     
     # Adicionar número legível (começando de 1)
     cluster_num = int(cluster_id) + 1
     
-    perfis_html += f"{cluster_num}. **{nome}**: {forte}. {fraco}.\n\n"
+    # Usar o nome completo sem truncamento
+    perfis_html += f"{cluster_num}. **{nome}**: {perfil}\n\n"
 
 st.markdown(perfis_html)
 
@@ -97,7 +100,6 @@ colunas_display.extend(colunas_indicadores)
 # Renomear colunas para melhor visualização
 column_rename = {
     "quantidade_municipios": "Nº Municípios",
-    "IDHM": "IDHM",
     "IDEB Anos Iniciais": "IDEB AI",
     "IDEB Anos Finais": "IDEB AF",
     "Taxa de Evasão AI": "Evasão AI (%)",
@@ -121,14 +123,21 @@ possiveis_datas = [
     (data_atual - datetime.timedelta(days=1)).strftime("%Y%m%d")  # Ontem
 ]
 
+# Tentar diferentes possíveis nomes de arquivo
 mapa_encontrado = False
-for data_str in possiveis_datas:
+possiveis_arquivos = [
+    f"mapa_interativo_5clusters_educacao_sem_idhm_{data_str}.html" for data_str in possiveis_datas
+]
+possiveis_arquivos.append("mapa_interativo_5clusters_educacao_sem_idhm.html") # Sem data
+possiveis_arquivos.append("mapa_interativo_5clusters_educacao.html") # Arquivo original
+
+for arquivo_mapa in possiveis_arquivos:
     try:
-        arquivo_mapa = f"mapa_interativo_5clusters_educacao_{data_str}.html"
         with open(arquivo_mapa, "r", encoding="utf-8") as file:
             html_mapa = file.read()
         st.components.v1.html(html_mapa, height=600)
         mapa_encontrado = True
+        st.caption(f"Mapa carregado: {arquivo_mapa}")
         break
     except FileNotFoundError:
         continue
@@ -214,6 +223,7 @@ with st.expander("📓 Metodologia"):
        - Algoritmo K-Means com 5 clusters
        - Número ideal de clusters determinado pelo método do cotovelo e silhueta
        - Validação por PCA (Análise de Componentes Principais)
+       - Análise realizada sem considerar o IDHM 2010, focando exclusivamente nos indicadores educacionais
     
     3. **Interpretação**:
        - Análise das médias dos indicadores por cluster

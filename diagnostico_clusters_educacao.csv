@@ -1,41 +1,55 @@
-cluster,IDHM 2010,IDEB AI - Pública,IDEB Anos Finais - Pública,Taxa de evasão ensino fund. Anos Iniciais,Taxa de evasão ensino fund. Anos Finais,Taxa de Abandono - Anos Iniciais,Taxa de Abandono - Anos Finais,Nome do Cluster,Perfil,Pontos Fortes,Pontos Fracos,Recomendações
-0,0.5364146341463415,4.880487804878048,4.311230598669622,1.3439024390243903,5.175609756097561,0.21707317073170732,1.6609756097560975,Alto IDEB Anos Iniciais,"Municípios com IDEB Anos Iniciais acima da média estadual, proporcionando uma base educacional sólida para crianças no início da escolarização.","- IDEB Anos Iniciais elevado (4.88, acima da média nacional de 5.8)
-- Bom desempenho relativo no IDEB Anos Finais (4.31)
-- Práticas pedagógicas eficazes nos primeiros anos do ensino fundamental
-- Boa formação de base para os estudantes","- IDHM moderado (0.54, abaixo da referência de 0.7)
-- Aumento expressivo das taxas de abandono na transição para Anos Finais (1.66%)","- Documentar e compartilhar as boas práticas de ensino nos Anos Iniciais
-- Implementar programa de transição suave entre Anos Iniciais e Finais
-- Utilizar a boa base de alfabetização para potencializar o desempenho nos Anos Finais
-- Criar programa de formação continuada para professores dos Anos Finais baseado nas práticas bem-sucedidas dos Anos Iniciais"
-1,0.5660344827586207,4.858620689655172,4.241379310344827,0.5413793103448276,1.596551724137931,0.29310344827586204,1.5103448275862068,Baixa Evasão Escolar,"Municípios com taxas de evasão escolar reduzidas, demonstrando boa capacidade de retenção de alunos no sistema educacional.","- Taxa de evasão excepcionalmente baixa nos Anos Iniciais (0.54%)
-- Taxa de evasão reduzida nos Anos Finais (1.60%)
-- Baixas taxas de abandono escolar (AI: 0.29%, AF: 1.51%)
-- Sistema eficaz de acompanhamento e permanência dos alunos","- IDEB Anos Iniciais na média estadual, mas abaixo da média nacional (4.86)
-- IDEB Anos Finais abaixo da média nacional (4.24)","- Documentar e disseminar as estratégias bem-sucedidas de retenção de alunos
-- Implementar programa de melhoria da qualidade de ensino para elevar o IDEB
-- Desenvolver indicadores qualitativos para monitorar o aprendizado além da permanência
-- Criar estratégias para ampliar o envolvimento das famílias na vida escolar"
-2,0.5601538461538461,4.604452529452529,3.848479020979021,3.0,5.223076923076923,1.7038461538461538,4.415384615384616,Alta Taxa de Abandono,"Municípios com altas taxas de abandono escolar, indicando desafios significativos na permanência dos alunos no ambiente escolar.",- Oportunidade clara para intervenções de alto impacto,"- Taxa de abandono escolar muito elevada nos Anos Iniciais (1.70%)
-- Taxa de abandono escolar crítica nos Anos Finais (4.42%)
-- Altas taxas de evasão (AI: 3.00%, AF: 5.22%)
-- Possível ciclo de abandono-evasão com impacto intergeracional","- Implementar sistema de alerta precoce para identificar estudantes em risco de abandono
-- Criar programa de busca ativa de alunos ausentes com visitas domiciliares
-- Desenvolver parcerias com assistência social para apoio às famílias em vulnerabilidade
-- Implantar programas de apoio socioemocional e projeto de vida para os estudantes
-- Estabelecer política de estímulo à frequência com acompanhamento personalizado"
-3,0.60475,5.432142857142857,4.802865259740259,2.092857142857143,3.6160714285714284,0.18571428571428572,1.0321428571428573,IDEB Anos Finais Elevado,"Municípios com IDEB Anos Finais destacado, conseguindo manter a qualidade educacional na transição para o ensino fundamental II.","- IDEB Anos Finais destacado (4.80, acima da média nacional de 4.8)
-- IDEB Anos Iniciais também positivo (5.43)
-- IDHM relativamente favorável (0.60)
-- Qualidade consistente ao longo de todo o ensino fundamental",- Taxa de evasão nos Anos Finais pode ser melhorada (3.62%),"- Documentar as práticas pedagógicas bem-sucedidas nos Anos Finais
-- Criar programa de mentoria entre escolas para disseminar boas práticas
-- Desenvolver estratégias para a transição para o ensino médio
-- Implementar monitoramento contínuo dos indicadores para sustentabilidade dos resultados"
-4,0.5705138888888889,6.225218968968969,5.210561868686869,0.7777777777777778,3.0194444444444444,0.036111111111111115,0.11388888888888887,IDHM Abaixo da Média,"Municípios com IDHM educacional abaixo da média, enfrentando desafios socioeconômicos que impactam o ambiente educacional.","- Taxa de evasão nos Anos Iniciais relativamente controlada (0.78%)
-- IDEB Anos Iniciais relativamente melhor que Anos Finais (6.23)","- IDHM significativamente abaixo da média (0.57, bem abaixo da referência de 0.7)
-- IDEB Anos Iniciais abaixo da média nacional (6.23)
-- IDEB Anos Finais preocupante (5.21)
-- Desafios socioeconômicos impactando o ambiente escolar","- Implementar abordagem intersetorial (educação, assistência social, saúde) para enfrentar vulnerabilidades
-- Criar programa de reforço escolar intensivo para recuperar defasagens de aprendizagem
-- Desenvolver estratégias de alimentação escolar reforçada e atendimento às necessidades básicas
-- Estabelecer parceria com universidades para formação continuada de professores
-- Focar em alfabetização e letramento com métodos baseados em evidências"
+cluster,Nome do Cluster,Perfil,Pontos Fortes,Pontos Fracos,Recomendações,IDEB AI - Pública,IDEB Anos Finais - Pública,Taxa de evasão ensino fund. Anos Iniciais,Taxa de evasão ensino fund. Anos Finais,Taxa de Abandono - Anos Iniciais,Taxa de Abandono - Anos Finais
+0,IDEB Bom e Evasão Moderada,"Municípios com bom desempenho nos IDEBs, baixas taxas de abandono e evasão moderada, representando um perfil educacional equilibrado.","- IDEB Anos Iniciais satisfatório (5.60)
+- IDEB Anos Finais acima da média do estado (4.94)
+- Taxas de abandono muito baixas (AI: 0.11%, AF: 0.59%)
+- Equilíbrio entre desempenho e permanência escolar","- Taxa de evasão nos Anos Finais significativa (4.06%)
+- Potencial para melhorar ainda mais o IDEB Anos Iniciais
+- Discrepância entre taxas de evasão dos Anos Iniciais e Finais
+- Necessidade de fortalecer a transição entre ciclos","- Implementar acompanhamento personalizado para estudantes na transição para Anos Finais
+- Desenvolver programa de monitoramento e redução de evasão
+- Documentar e disseminar boas práticas que contribuem para baixas taxas de abandono
+- Criar sistema de alerta precoce para potenciais casos de evasão",5.5950739200739195,4.9405186480186485,1.644871794871795,4.06025641025641,0.11153846153846153,0.5923076923076923
+1,Alta Taxa de Abandono,"Municípios com os maiores desafios educacionais, apresentando altas taxas de abandono, evasão elevada e IDEB abaixo da média.","- Grupo claramente identificado para intervenções de alto impacto
+- Potencial para melhoria significativa com programas focados e recursos direcionados
+- Alguma capacidade educacional demonstrada (IDEB AI: 4.64)
+- Oportunidade para parcerias intersetoriais com grande potencial de transformação","- Taxas de abandono extremamente elevadas (AI: 1.68%, AF: 4.25%)
+- Altas taxas de evasão em ambos os ciclos (AI: 2.94%, AF: 5.16%)
+- IDEB Anos Finais muito baixo (3.93)
+- Desafios sistêmicos que afetam todo o ciclo educacional","- Implementar programa de busca ativa de estudantes com abandono escolar
+- Criar rede de apoio integrada (educação, assistência social, saúde) para famílias vulneráveis
+- Desenvolver estratégias específicas para melhorar o IDEB Anos Finais
+- Estabelecer metas progressivas de redução das taxas de abandono e evasão
+- Implantar programa de acompanhamento individual para estudantes em risco",4.639848777348777,3.9307305194805195,2.939285714285714,5.1571428571428575,1.6821428571428572,4.25
+2,IDEB Excelente e Baixo Abandono,"Municípios de excelência educacional, com os melhores IDEBs e as menores taxas de abandono e evasão, demonstrando qualidade e retenção escolar.","- IDEB Anos Iniciais excepcional (6.51, bem acima da média nacional)
+- IDEB Anos Finais destacado (5.30, acima da média nacional)
+- Taxas de abandono praticamente inexistentes (AI: 0.03%, AF: 0.11%)
+- Taxas de evasão muito baixas, especialmente nos Anos Iniciais (0.59%)","- Taxa de evasão nos Anos Finais ainda presente (2.54%)
+- Desafio de manter e ampliar os excelentes resultados já alcançados
+- Potencial risco de acomodação devido aos bons resultados
+- Necessidade de estratégias específicas para a sustentabilidade dos resultados","- Documentar e formalizar as práticas de excelência para criação de modelo replicável
+- Criar programa de mentoria para outros municípios do estado
+- Desenvolver estratégias para reduzir ainda mais a evasão nos Anos Finais
+- Estabelecer metas de inovação pedagógica para contínuo aprimoramento
+- Implementar plano de sustentabilidade de longo prazo para os bons resultados",6.5062500000000005,5.303342803030303,0.5916666666666667,2.5395833333333333,0.03125,0.1125
+3,Baixa Evasão e Abandono Moderado,"Municípios com taxas de evasão excepcionalmente baixas, IDEB moderado e abandono controlado, indicando boa capacidade de retenção escolar.","- Taxa de evasão excepcionalmente baixa em ambos os ciclos (AI: 0.47%, AF: 1.12%)
+- Sistema eficaz de retenção escolar e acompanhamento de frequência
+- IDEB compatível com a realidade local (AI: 4.84, AF: 4.20)
+- Boa continuidade do fluxo escolar entre Anos Iniciais e Finais","- IDEB abaixo da média nacional em ambos os ciclos
+- Taxa de abandono moderada nos Anos Finais (1.32%)
+- Potencial foco excessivo na frequência versus qualidade do ensino
+- Oportunidade de melhoria nos indicadores de aprendizagem","- Documentar e compartilhar as estratégias eficazes de retenção de alunos
+- Desenvolver ações específicas para elevar o IDEB, mantendo as baixas taxas de evasão
+- Implementar monitoramento da qualidade das aulas e formação continuada para professores
+- Criar programa de redução do abandono nos Anos Finais
+- Estabelecer metas progressivas de melhoria do IDEB",4.84,4.195,0.475,1.1199999999999999,0.305,1.325
+4,IDEB Médio e Evasão Alta,"Municípios com IDEB na média, baixo abandono nos Anos Iniciais, mas desafios significativos na evasão e abandono nos Anos Finais.","- IDEB razoável considerando os desafios (AI: 4.75, AF: 4.20)
+- Taxa de abandono relativamente baixa nos Anos Iniciais (0.23%)
+- Capacidade de manter estudantes nos primeiros anos do ensino fundamental
+- Potencial para melhorias significativas com intervenções focadas","- Taxa de evasão elevada nos Anos Finais (4.18%)
+- Taxa de abandono significativa nos Anos Finais (1.91%)
+- Fragilidade na transição entre Anos Iniciais e Finais
+- Desafios na manutenção da qualidade e permanência nos Anos Finais","- Desenvolver programa especial de transição entre os ciclos do ensino fundamental
+- Implementar sistema de alerta precoce para identificar estudantes em risco de evasão
+- Criar estratégias específicas para redução do abandono nos Anos Finais
+- Estabelecer programa de apoio acadêmico e socioemocional para adolescentes
+- Promover formação continuada para professores dos Anos Finais",4.754,4.201209090909091,1.47,4.176,0.226,1.912
